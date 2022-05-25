@@ -6,13 +6,13 @@ const Card = ({ children }) => {
 };
 
 Card.Header = ({ balance }) => (
-	<div className="card__header">
+	<header className="card__header">
 		<div className="balance">
 			<p className="balance__title"> My balance</p>
 			<p className="balance__amount">${balance}</p>
 		</div>
 		<Logo />
-	</div>
+	</header>
 );
 
 Card.Body = ({ children, total, increase }) => (
@@ -27,10 +27,10 @@ Card.Footer = ({ total, increase }) => (
 	<footer className="card__footer">
 		<div className="total">
 			<p>Total this month</p>
-			<h2 className="total__amount">${total}</h2>
+			<p className="total__amount">${total}</p>
 		</div>
 		<div className="increase">
-			<h3 className="increase__percent">{increase}</h3>
+			<p className="increase__percent">{increase}</p>
 			<p>From last month</p>
 		</div>
 	</footer>

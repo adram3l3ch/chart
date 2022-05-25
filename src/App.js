@@ -4,7 +4,7 @@ import data from "./data.json";
 
 function App() {
 	return (
-		<div className="app">
+		<main className="app">
 			<Card>
 				<Card.Header balance={4545} />
 				<Card.Body total={478.33} increase="+2.4%">
@@ -12,7 +12,7 @@ function App() {
 					<hr />
 				</Card.Body>
 			</Card>
-		</div>
+		</main>
 	);
 }
 
