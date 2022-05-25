@@ -7,7 +7,7 @@ const Bar = ({ value, percentage, active }) => {
 			<div style={style} className={active ? "bar active" : "bar"}>
 				<div className="tooltip">${value[1]}</div>
 			</div>
-			<h4 className="y-label">{value[0]}</h4>
+			<p className="y-label">{value[0]}</p>
 		</div>
 	);
 };
