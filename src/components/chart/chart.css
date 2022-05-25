@@ -1,0 +1,55 @@
+.chart {
+	height: 200px;
+	display: flex;
+	align-items: flex-end;
+}
+
+.chart__item {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.bar {
+	background-color: hsl(10, 79%, 65%);
+	width: 100%;
+	border-radius: 0.5rem;
+	transition: filter 0.2s ease-in-out;
+	cursor: pointer;
+	position: relative;
+}
+
+.bar:hover {
+	filter: brightness(1.2);
+}
+
+.bar.active {
+	background-color: hsl(186, 34%, 60%);
+}
+
+.y-label {
+	color: hsl(28, 10%, 53%);
+	font-weight: 400;
+}
+
+.tooltip {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -120%);
+	background-color: hsl(25, 47%, 10%);
+	color: white;
+	padding: 0.5rem 0.75rem;
+	border-radius: 0.25rem;
+	opacity: 0;
+	transition: opacity 0.2s linear;
+	pointer-events: none;
+}
+
+.bar:hover .tooltip {
+	opacity: 1;
+}
